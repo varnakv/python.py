@@ -1,0 +1,15 @@
+word=input("enter the word")
+for i in range (6)
+  tries=input ("enter your guess:")
+   out=""
+   for j in tries:
+       if j in word:
+           pos1=word.find(j)
+           pos2=tries.find(j)
+           if pos1==pos2:
+                out+=j
+           else:
+              out+="*"
+       else:
+           out+="_"
+   print(out)
